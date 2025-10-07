@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adam (آدم) — Short Film by Fadi Azra</title>
+  <meta name="description" content="Adam (آدم) — a 3:21 stop‑motion short by Fadi Azra. A man who no longer recognizes himself searches through eroding memories and fading ties to his homeland." />
+  <meta property="og:title" content="Adam (آدم) — Short Film by Fadi Azra" />
+  <meta property="og:description" content="A surreal stop‑motion journey through memory, identity, and belonging." />
+  <meta name="theme-color" content="#0f172a" />
+  <style>
+    :root {
+      --bg: #0b0f1a;
+      --fg: #e5e7eb;
+      --muted: #a1a1aa;
+      --accent: #eab308; /* gold */
+      --card: #111827;
+      --border: #1f2937;
+      --link: #93c5fd;
+      --maxw: 960px;
+    }
+    @media (prefers-color-scheme: light) {
+      :root { --bg: #f8fafc; --fg: #0b1220; --muted:#475569; --card:#ffffff; --border:#e2e8f0; --link:#1d4ed8; }
+    }
+    html, body { height: 100%; }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { position: sticky; top: 0; z-index: 50; backdrop-filter: saturate(140%) blur(6px); background: color-mix(in oklab, var(--bg) 80%, transparent); border-bottom: 1px solid var(--border); }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 1rem; }
+    .brand { display: flex; align-items: center; gap: .6rem; font-weight: 700; letter-spacing: .3px; }
+    nav { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+
+    .hero { padding: 6rem 1rem 3rem; background: radial-gradient(1200px 600px at 20% -10%, rgba(234,179,8,.15), transparent), radial-gradient(900px 500px at 110% 10%, rgba(147,197,253,.1), transparent); border-bottom: 1px solid var(--border); }
+    .hero h1 { font-size: clamp(2rem, 7vw, 4rem); line-height: 1.1; margin: 0 0 .5rem; }
+    .sub { color: var(--muted); margin-top: .25rem; }
+    .badge { display: inline-block; border: 1px solid var(--border); padding: .25rem .5rem; border-radius: 999px; font-size: .85rem; color: var(--muted); }
+
+    .grid { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+    @media (min-width: 800px) { .grid { grid-template-columns: 1.2fr .8fr; } }
+
+    section { scroll-margin-top: 80px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.25rem; }
+    h2 { font-size: clamp(1.4rem, 4vw, 2rem); margin: .2rem 0 1rem; }
+    h3 { margin: 0 0 .5rem; }
+    .kvs { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: .75rem; }
+    .kv { background: transparent; border: 1px dashed var(--border); border-radius: 10px; padding: .75rem; }
+    .kv b { display: block; font-size: .9rem; color: var(--muted); }
+
+    .cta { display: inline-flex; align-items: center; gap: .5rem; background: var(--fg); color: var(--bg); font-weight: 700; padding: .75rem 1rem; border-radius: 999px; border: none; cursor: pointer; text-decoration: none; }
+    .cta:hover { filter: brightness(.95); }
+    details { border: 1px solid var(--border); border-radius: 10px; padding: .75rem 1rem; }
+    details + details { margin-top: .75rem; }
+
+    ul.clean { list-style: none; padding: 0; margin: 0; display: grid; gap: .5rem; }
+    ul.clean li { padding: .6rem .75rem; border: 1px solid var(--border); border-radius: 10px; }
+
+    footer { border-top: 1px solid var(--border); margin-top: 3rem; }
+    small.dim { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap row">
+      <div class="brand">Adam (آدم)</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#watch">Watch</a>
+        <a href="#synopsis">Synopsis</a>
+        <a href="#screenings">Screenings</a>
+        <a href="#making">Making Of</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+<section class="hero">
+  <div class="wrap grid">
+    <!-- LEFT: Poster -->
+    <div>
+      <img src="Images/poster.png"
+           alt="Adam — film poster"
+           style="width:100%;height:auto;border-radius:12px;border:1px solid var(--border);">
+    </div>
+
+    <!-- RIGHT: Title + logline + At a glance -->
+    <div>
+      <span class="badge">Stop-Motion · Short · Syria / USA · 2025</span>
+      <h1>Adam (آدم)</h1>
+      <p class="sub">
+        Adam, a man who no longer recognizes himself, embarks on a surreal journey
+        through eroding memories and fading ties to his homeland, seeking to rediscover who he truly is.
+      </p>
+
+      <div class="card" style="margin-top:1rem;">
+        <h3>At a glance</h3>
+        <div class="kvs" role="list">
+          <div class="kv" role="listitem"><b>Running Time</b>3:21</div>
+          <div class="kv" role="listitem"><b>Category</b>Stop-Motion · Animation · Short</div>
+          <div class="kv" role="listitem"><b>Completion</b>May 2025</div>
+          <div class="kv" role="listitem"><b>Premiere</b>West Coast Premiere</div>
+          <div class="kv" role="listitem"><b>Country</b>Syria / USA</div>
+          <div class="kv" role="listitem"><b>Credits</b>Film by — Fadi Azra</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <main class="wrap">
+    <section id="about" class="card">
+      <h2>About the Film</h2>
+      <p><em>Adam</em> is a stop‑motion short set entirely within a bedroom where passports multiply and memories falter. It explores the fracture between past and present, belonging and loss, as identity is renegotiated in the space between remembering and forgetting.</p>
+<!-- Stills grid -->
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin-top:1rem;">
+  <img src="Images/still1.png" alt="Adam film still 1" style="width:100%;height:auto;border-radius:10px;border:1px solid var(--border);">
+  <img src="Images/still2.png" alt="Adam film still 2" style="width:100%;height:auto;border-radius:10px;border:1px solid var(--border);">
+</div>
+
+    </section>
+
+    <section id="watch" class="card">
+      <h2>Watch</h2>
+      <p>
+        Film link (Vimeo):
+        <a href="https://vimeo.com/1124508263?share=copy" target="_blank" rel="noopener">vimeo.com/1124508263</a>
+      </p>
+      <details>
+        <summary>Show password</summary>
+        <p><strong>Password:</strong> <code>Adam2025!</code></p>
+      </details>
+      <p class="sub">Note: This link is intended for festival programmers and private viewing.</p>
+    </section>
+
+    <section id="synopsis" class="card">
+      <h2>Synopsis</h2>
+      <h3>Short</h3>
+      <p>Adam wakes to a face without eyes and a self he no longer recognizes. 
+  As he searches for who he once was, Adam experiences the fracture 
+  between past and present, the erosion of memory that time brings, 
+  and the haunting fear of losing where he belongs.</p>
+      <details>
+        <summary><strong>Read the long synopsis</strong></summary>
+        <p>When memory begins to fail us, when it no longer shields us from the terrifying 
+    uncertainty of not knowing who we are, and when we find ourselves haunted in 
+    limbo between remembering and forgetting, our physical surroundings often become 
+    the last anchors to our identity. Familiar objects become silent witnesses to 
+    who we once were. But what happens when even those tangible remnants begin to fade, 
+    to feel foreign, to contradict the truth we carry deep inside?</p>
+      </details>
+    </section>
+
+    <section id="screenings" class="card">
+      <h2>Screenings & Recognition</h2>
+      <ul class="clean">
+        <li>Best Animated Short Film, Indo/Dubai International Film Festival (July 2025)</li>
+        <li>Buffalo International Film Festival — Official Selection (Screening: Oct 12, 2025)</li>
+        <li>Arpa International Film Festival (TCL Chinese Theatre, Hollywood) — Official Selection & Nominee: Best Animated Film (Sept 2025)</li>
+        <li>SMFA at Tufts — 2025 Outstanding Creative Achievement Award (June 2025)</li>
+      </ul>
+    </section>
+
+    <section id="bio" class="card">
+  <h2>Director</h2>
+  <div style="display:flex;align-items:flex-start;gap:2rem;flex-wrap:wrap;">
+    <!-- Left side: Bio text -->
+    <div style="flex:1 1 400px;min-width:260px;">
+      <p>
+        Fadi Azra, born and raised in Syria, is a 21-year-old artist and third-year student at 
+        Tufts University in Boston, Massachusetts. He is from Al-Bayadiyah and attended Amir 
+        Ibrahim High School in Hama before moving to the United States in 2023. He began his 
+        college career at the Tufts School of the Museum of Fine Arts and later transferred 
+        to Tufts’ Combined Degree Program, where he is pursuing a Bachelor of Fine Arts and 
+        a Bachelor of Science in Engineering Psychology (Human Factors Engineering).
+      </p>
+      <p>
+        Fadi’s artistic practice centres on storytelling through stop-motion animation, painting, 
+        and drawing. A lifelong artist, Fadi began making puppets and painting at the age of six 
+        and continues to explore creative approaches to expression that bridge his fine arts 
+        background with psychological inquiry.
+      </p>
+    </div>
+
+    <!-- Right side: Photo -->
+    <div style="flex:0 0 280px;max-width:280px;">
+      <img src="Images/fadi.jpeg" alt="Fadi Azra portrait" 
+           style="width:100%;height:auto;border-radius:12px;border:1px solid var(--border);">
+    </div>
+  </div>
+</section>
+
+
+    <section id="artist" class="card">
+      <h2>Artist’s Statement</h2>
+      <details open>
+        <summary><strong>Haunted in limbo between remembering and forgetting</strong></summary>
+    <p>
+    When memory fades and no longer shields us from the terrifying uncertainty of 
+    losing who we are, where we came from, and what we’ve endured, physical surroundings 
+    often become the last anchors to our past identity. A familiar scent, a family photo, 
+    or an old passport becomes a silent witness to who we once were. But what happens 
+    when even those tangible remnants begin to fade, feel foreign, and conflict with 
+    the truth we carry deep inside? When the physical starts to betray us, we’re left 
+    disoriented and haunted by being in limbo between remembering and forgetting.
+  </p>
+  <p>
+    <em>Adam</em> is my depiction of that fear — the fear of forgetting where I came from. 
+    It is my way of processing the ache of distance, the fragility of memory, and the 
+    erosion of identity that time brings. I’ve been away from Syria, my home, for two years now. 
+    I know I’ll continue living in the United States while pursuing my education for at least 
+    the next three years. And with each passing day, I wrestle with a growing fear: 
+    what if I forget what it means to be Syrian? What if I wake up one day and no longer 
+    recognize the feelings, smells, and stories that once shaped me? To hold on to my origins 
+    and identity, I surround myself with objects that remind me of home. But these fragments, 
+    though meaningful, often feel small and powerless in the larger spaces I now occupy. 
+    They aren’t enough to fully preserve who I was, and I worry that even they are beginning 
+    to lose their connection to the world they came from.
+  </p>
+  <p>
+    <em>Adam</em> is not just a character; he is me, and he is anyone who has ever feared losing 
+    their connection to their homeland. This story is both deeply personal and universally 
+    resonant, asking the question: what defines us when everything familiar begins to slip away?
+  </p>
+      </details>
+    </section>
+
+    <section id="making" class="card">
+      <h2>The Making of <em>Adam</em></h2>
+  
+  <details id="puppet">
+  <summary><strong>Puppet</strong></summary>
+
+  <p>
+    I’ve been making dolls since I was six years old. In my first attempts, I melted plastic 
+    hangers to form joints, used eggshells for heads, and wrapped yarn around wire to create 
+    bodies. Later came my DIY fairy dolls that were crafted with wires, fake flowers, and 
+    scraps of fabric. So, when it came time to make <em>Adam</em>, it felt as if I had come 
+    full circle. Building him was one of my favorite parts of the entire filmmaking process.
+  </p>
+  <p>
+    The first sketch of Adam appeared one night during my first year of college. I had been 
+    thinking about what it meant to leave home — and the fear that, with time, I might begin 
+    to lose my memory of home. From that thought, and from the tears that followed, Adam was born.
+  </p>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0;">
+    <img src="Images/puppet1.png" alt="Puppet making process 1" 
+         style="width:100%;height:auto;border-radius:10px;border:1px solid var(--border);">
+    <img src="Images/puppet2.png" alt="Puppet making process 2" 
+         style="width:100%;height:auto;border-radius:10px;border:1px solid var(--border);">
+    <img src="Images/puppet3.png" alt="Puppet making process 3" 
+         style="width:100%;height:auto;border-radius:10px;border:1px solid var(--border);">
+  </div>
+
+  <p>
+    The prototype version of Adam became my first real experiment in stop-motion puppet building. 
+    As a college student with limited resources, I couldn’t afford a professional ball-and-socket 
+    skeleton, so I built his frame out of wire. After animating with him for a semester, I quickly 
+    learned the downsides — wires break easily and can’t hold consistent poses.
+  </p>
+
+  <figure style="margin:0;">
+  <div style="position:relative;width:100%;max-width:860px;aspect-ratio:16/9;border-radius:12px;border:1px solid var(--border);overflow:hidden;">
+    <iframe
+      src="https://www.youtube.com/embed/HF3JiouZZ4A?autoplay=1&mute=1&loop=1&playlist=HF3JiouZZ4A&controls=0&modestbranding=1&rel=0&playsinline=1"
+      title="First stop-motion animation test with Adam"
+      allow="autoplay; encrypted-media; picture-in-picture"
+      allowfullscreen
+      style="position:absolute;inset:0;width:100%;height:100%;border:0;">
+    </iframe>
+  </div>
+  <figcaption class="sub" style="font-size:.85rem;margin-top:.35rem;">
+    first stop-motion animation test with Adam
+  </figcaption>
+</figure>
+<p style="margin-top:1rem;">
+    A year later, I received a small grant from my university — around $200 — which I used to 
+    invest in a proper ball-and-socket armature and hands. That upgrade transformed the puppet’s 
+    movement and durability, and from there, the final version of Adam came to life.
+  </p>
+  <p>
+    To bring Adam’s body to completion, I sculpted epoxy clay carefully around the skeleton, 
+    then wrapped it with a thin layer of fiber filling before dressing him. This layering gave 
+    him smooth, natural bends at the joints. His head was also made from epoxy sculpt, and I 
+    hand-painted the face with acrylics. I hand-sewed all of Adam’s clothes from scrap fabrics — 
+    his shirt, in fact, was made from one of my own striped shirts. That small detail mattered 
+    to me; I saw Adam as an extension of myself, and incorporating something of my own felt 
+    like giving him a part of my story.
+  </p>
+	
+</details>
+	<details id="set">
+    <summary><strong>Set</strong></summary>
+    <p>
+      The elements of Adam’s world were handmade. The set’s furniture — the desk, bed, side table, closet, and walls — was built entirely from wood. I attached a metal sheet beneath the floor of the set, covered it with a thin layer of dark blue fabric, and placed small magnets inside Adam’s shoes to help control his steps during animation.
+    </p>
+	<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0;">
+    <img src="Images/set1.jpeg" alt="Adam film set 1" 
+         style="width:100%;height:auto;border-radius:10px;border:1px solid var(--border);">
+    <img src="Images/set2.jpeg" alt="Adam film set 2" 
+         style="width:100%;height:auto;border-radius:10px;border:1px solid var(--border);">
+    <img src="Images/set3.jpeg" alt="Adam film set 3" 
+         style="width:100%;height:auto;border-radius:10px;border:1px solid var(--border);">
+  </div>
+	<p>
+	One of the most time-consuming props was the stack of tiny passports that appears in the film. I gathered stock images of passports from countries all over the world, printed them on cardstock, and hand-cut and folded each one. In total, I made about 500 miniature passports — a process that took nearly three weeks to complete.
+	</p>
+	<img src="Images/set4.jpeg" alt="Adam film set 4" 
+       style="width:100%;max-width:860px;height:auto;border-radius:12px;border:1px solid var(--border);margin:1rem 0;">
+	<p>
+	The repetition and slowness of making those passports became an essential part of the process. When I thought about what forms someone’s identity, I realized how overwhelming it is — the countless elements that 	shape who we are. Each passport felt like a small fragment of that identity: what it could mean, what it could’ve meant, or what it might still mean in the future. That sense of fracture, confusion, and the 		constant re-evaluation of identity found its way into the rhythm of my hands — sitting at a table, cutting these tiny, colorful papers that carried so much symbolic weight.
+	<p>
+  </details>
+
+    <section id="contact" class="card">
+  <h2>Contact</h2>
+  <p>
+    Email: <a href="mailto:fadiazra8@gmail.com">fadiazra8@gmail.com</a><br>
+    Instagram: 
+    <a href="https://www.instagram.com/fadi_azra_art?igsh=MWd5b2g3azcyaG91aw%3D%3D&utm_source=qr" target="_blank" rel="noopener">
+      @fadi_azra_art
+    </a>
+  </p>
+</section>
+
+    <footer class="wrap">
+      <div class="row" style="padding:1.5rem 0;">
+        <small class="dim">© <span id="y"></span> Fadi Azra · <em>Adam (آدم)</em></small>
+        <small class="dim">Built with a simple, single‑file HTML template.</small>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+<script>
+  (function(){
+    const det = document.getElementById('puppet');
+    const vid = document.getElementById('puppetLoop');
+    if (!det || !vid) return;
+    if (det.open) { vid.play().catch(()=>{}); }
+    det.addEventListener('toggle', () => {
+      if (det.open) {
+        vid.play().catch(()=>{});
+      } else {
+        vid.pause();
+        vid.currentTime = 0;
+      }
+    });
+  })();
+</script>
+</body>
+</html>
